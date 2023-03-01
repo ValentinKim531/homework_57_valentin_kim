@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Task(models.Model):
+class Issue(models.Model):
     summary = models.CharField(
         max_length=200,
         null=False,
@@ -15,17 +15,17 @@ class Task(models.Model):
         blank=False,
         verbose_name="Описание",
     )
-    status = models.ForeignKey(
-        'webapp.Status',
-        related_name='tasks',
-        verbose_name='Статус',
+    type = models.ForeignKey(
+        'webapp.Type',
+        related_name='issues',
+        verbose_name='Тип',
         on_delete=models.RESTRICT,
         blank=False
     )
-    type = models.ForeignKey(
-        'webapp.Type',
-        related_name='tasks',
-        verbose_name='Тип',
+    status = models.ForeignKey(
+        'webapp.Status',
+        related_name='issues',
+        verbose_name='Статус',
         on_delete=models.RESTRICT,
         blank=False
     )
@@ -42,7 +42,7 @@ class Task(models.Model):
         return f"{self.summary} - {self.description} - {self.status} - {self.type}"
 
     class Meta:
-        verbose_name = 'Задача'
-        verbose_name_plural = 'Задачи'
+        verbose_name = 'Проблема'
+        verbose_name_plural = 'Проблемы'
 
 

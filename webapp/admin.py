@@ -1,11 +1,11 @@
 from django.contrib import admin
 
-from .models import Task, Status, Type
+from .models import Issue, Status, Type
 
 
 # Register your models here.
 
-class TaskAdmin(admin.ModelAdmin):
+class IssueAdmin(admin.ModelAdmin):
     list_display = (
         "id",
         "summary",
@@ -19,7 +19,7 @@ class TaskAdmin(admin.ModelAdmin):
     readonly_fields = ("id", "created_at", "updated_at")
 
 
-admin.site.register(Task, TaskAdmin)
+admin.site.register(Issue, IssueAdmin)
 
 
 class TypeAdmin(admin.ModelAdmin):

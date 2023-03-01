@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "name": "New",
-    "created_at": "2023-03-01T11:30:43.688Z"
+    "created_at": "2023-03-01T12:09:18.068Z"
   }
 },
 {
@@ -12,7 +12,7 @@
   "pk": 2,
   "fields": {
     "name": "In Progress",
-    "created_at": "2023-03-01T11:31:12.823Z"
+    "created_at": "2023-03-01T12:09:26.809Z"
   }
 },
 {
@@ -20,7 +20,7 @@
   "pk": 3,
   "fields": {
     "name": "Done",
-    "created_at": "2023-03-01T11:31:20.729Z"
+    "created_at": "2023-03-01T12:09:33.374Z"
   }
 },
 {
@@ -28,7 +28,7 @@
   "pk": 1,
   "fields": {
     "name": "Task",
-    "created_at": "2023-03-01T11:31:31.992Z"
+    "created_at": "2023-03-01T12:08:51.174Z"
   }
 },
 {
@@ -36,7 +36,7 @@
   "pk": 2,
   "fields": {
     "name": "Bug",
-    "created_at": "2023-03-01T11:31:45.448Z"
+    "created_at": "2023-03-01T12:08:57.855Z"
   }
 },
 {
@@ -44,103 +44,91 @@
   "pk": 3,
   "fields": {
     "name": "Enhancement",
-    "created_at": "2023-03-01T11:31:52.646Z"
+    "created_at": "2023-03-01T12:09:08.822Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 1,
   "fields": {
-    "summary": "Homework #57",
-    "description": "do homework # 57\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quas cumque iste consequuntur iusto vel velit saepe explicabo in illum?",
-    "status": 1,
+    "summary": "homework_57",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fuga quas sint corrupti error! Nostrum!",
     "type": 1,
-    "created_at": "2023-03-01T11:32:55.691Z",
-    "updated_at": "2023-03-01T11:32:55.691Z"
+    "status": 1,
+    "created_at": "2023-03-01T12:10:34.510Z",
+    "updated_at": "2023-03-01T12:10:34.510Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 2,
   "fields": {
-    "summary": "update homework # 57",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quo reiciendis possimus tempora, dolore modi?",
-    "status": 2,
+    "summary": "homework_55",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fuga quas sint corrupti error! Nostrum!\r\nLorem ipsum dolor sit amet consectetur .",
     "type": 2,
-    "created_at": "2023-03-01T11:34:47.196Z",
-    "updated_at": "2023-03-01T11:34:47.196Z"
+    "status": 1,
+    "created_at": "2023-03-01T12:11:05.950Z",
+    "updated_at": "2023-03-01T12:11:05.950Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 3,
   "fields": {
-    "summary": "Lesson # 57",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. \r\nConsequatur autem unde molestias ea praesentium rem labore minus et repudiandae deserunt.",
-    "status": 3,
+    "summary": "webinar_27",
+    "description": "Lorem ipsum dolor sit \r\namet consectetur adipisicing elit.",
     "type": 3,
-    "created_at": "2023-03-01T11:36:37.889Z",
-    "updated_at": "2023-03-01T11:36:37.889Z"
+    "status": 1,
+    "created_at": "2023-03-01T12:11:29.122Z",
+    "updated_at": "2023-03-01T12:11:29.122Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 4,
   "fields": {
-    "summary": "lesson # 57",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum.",
-    "status": 1,
-    "type": 2,
-    "created_at": "2023-03-01T11:37:26.941Z",
-    "updated_at": "2023-03-01T11:37:26.941Z"
+    "summary": "buy PyCharm",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. \r\nIllum fuga quas sint corrupti error! Nostrum!\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. \r\nIllum fuga quas sint corrupti error! Nostrum!",
+    "type": 1,
+    "status": 2,
+    "created_at": "2023-03-01T12:12:07.526Z",
+    "updated_at": "2023-03-01T12:12:07.526Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 5,
   "fields": {
-    "summary": "Django model relations",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. \r\n\r\nAspernatur impedit deserunt asperiores obcaecati rem omnis aliquam! Nulla numquam vitae cum aperiam, totam nam debitis asperiores.",
-    "status": 1,
-    "type": 3,
-    "created_at": "2023-03-01T11:38:33.471Z",
-    "updated_at": "2023-03-01T11:38:33.471Z"
+    "summary": "buy products",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor quia, molestias reprehenderit omnis mollitia eveniet repellendus nam at vitae facilis iste blanditiis quaerat qui eligendi dignissimos! At, consequuntur. Voluptate.",
+    "type": 2,
+    "status": 2,
+    "created_at": "2023-03-01T12:14:04.302Z",
+    "updated_at": "2023-03-01T12:14:04.302Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 6,
   "fields": {
-    "summary": "TemplatesView",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. \r\nVitae voluptatem doloremque quaerat aspernatur quidem aliquam?",
-    "status": 2,
-    "type": 2,
-    "created_at": "2023-03-01T11:39:19.321Z",
-    "updated_at": "2023-03-01T11:39:19.321Z"
+    "summary": "Django models relations",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "type": 1,
+    "status": 3,
+    "created_at": "2023-03-01T12:14:41.498Z",
+    "updated_at": "2023-03-01T12:14:41.498Z"
   }
 },
 {
-  "model": "webapp.task",
+  "model": "webapp.issue",
   "pk": 7,
   "fields": {
-    "summary": "Task read PEP 8",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptatibus.",
-    "status": 2,
+    "summary": "Django forms",
+    "description": "Harum dolor quia, molestias reprehenderit omnis mollitia eveniet repellendus nam at vitae facilis iste blanditiis quaerat qui eligendi dignissimos! At, consequuntur. Voluptate.",
     "type": 3,
-    "created_at": "2023-03-01T11:39:56.680Z",
-    "updated_at": "2023-03-01T11:39:56.680Z"
-  }
-},
-{
-  "model": "webapp.task",
-  "pk": 8,
-  "fields": {
-    "summary": "Admin readme.md",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam cumque quisquam!",
     "status": 3,
-    "type": 1,
-    "created_at": "2023-03-01T11:40:50.581Z",
-    "updated_at": "2023-03-01T11:40:50.582Z"
+    "created_at": "2023-03-01T12:15:05.328Z",
+    "updated_at": "2023-03-01T12:15:05.328Z"
   }
 },
 {
