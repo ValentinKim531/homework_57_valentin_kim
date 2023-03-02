@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 class Issue(models.Model):
@@ -11,9 +12,9 @@ class Issue(models.Model):
 
     description = models.TextField(
         max_length=3000,
-        null=False,
-        blank=False,
-        verbose_name="Описание",
+        null=True,
+        blank=True,
+        verbose_name="Описание"
     )
     type = models.ForeignKey(
         'webapp.Type',
@@ -37,6 +38,15 @@ class Issue(models.Model):
         auto_now=True,
         verbose_name="Дата и время обновления"
     )
+    is_deleted = models.BooleanField(
+        verbose_name='удалено',
+        null=False,
+        default=False
+    )
+    deleted_at = models.DateTimeField(
+        verbose_name='Дата и время удаления',
+        null=True, default=None
+    )
 
     def __str__(self):
         return f"{self.summary} - {self.description} - {self.status} - {self.type}"
@@ -44,5 +54,10 @@ class Issue(models.Model):
     class Meta:
         verbose_name = 'Проблема'
         verbose_name_plural = 'Проблемы'
+        ordering = ['-created_at']
 
+    def delete(self, using=None, keep_parents=False):
+        self.is_deleted = True
+        self.deleted_at = timezone.now()
+        self.save()
 
