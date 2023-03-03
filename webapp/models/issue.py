@@ -16,11 +16,10 @@ class Issue(models.Model):
         blank=True,
         verbose_name="Описание"
     )
-    type = models.ForeignKey(
-        'webapp.Type',
+    type = models.ManyToManyField(
+        to='webapp.Type',
         related_name='issues',
         verbose_name='Тип',
-        on_delete=models.RESTRICT,
         blank=False
     )
     status = models.ForeignKey(

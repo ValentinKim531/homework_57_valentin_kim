@@ -11,13 +11,15 @@ class IssueAdmin(admin.ModelAdmin):
         "summary",
         "description",
         'status',
-        'type'
+        'get_type'
     )
     list_filter = ("id", "summary", "description")
     search_fields = ("summary", "description")
     fields = ("summary", "description", 'status', 'type')
     readonly_fields = ("id", "created_at", "updated_at")
 
+    def get_type(self, instance):
+        return [type.name for type in instance.type.all()]
 
 admin.site.register(Issue, IssueAdmin)
 

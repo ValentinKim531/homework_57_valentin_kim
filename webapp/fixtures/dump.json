@@ -1,50 +1,50 @@
 [
 {
   "model": "webapp.status",
-  "pk": 1,
+  "pk": 4,
   "fields": {
     "name": "New",
-    "created_at": "2023-03-01T12:09:18.068Z"
+    "created_at": "2023-03-03T08:47:13.064Z"
   }
 },
 {
   "model": "webapp.status",
-  "pk": 2,
+  "pk": 5,
   "fields": {
     "name": "In Progress",
-    "created_at": "2023-03-01T12:09:26.809Z"
+    "created_at": "2023-03-03T08:47:20.786Z"
   }
 },
 {
   "model": "webapp.status",
-  "pk": 3,
+  "pk": 6,
   "fields": {
     "name": "Done",
-    "created_at": "2023-03-01T12:09:33.374Z"
+    "created_at": "2023-03-03T08:47:29.516Z"
   }
 },
 {
   "model": "webapp.type",
-  "pk": 1,
+  "pk": 4,
   "fields": {
     "name": "Task",
-    "created_at": "2023-03-01T12:08:51.174Z"
+    "created_at": "2023-03-03T08:48:17.438Z"
   }
 },
 {
   "model": "webapp.type",
-  "pk": 2,
+  "pk": 5,
   "fields": {
     "name": "Bug",
-    "created_at": "2023-03-01T12:08:57.855Z"
+    "created_at": "2023-03-03T08:48:25.650Z"
   }
 },
 {
   "model": "webapp.type",
-  "pk": 3,
+  "pk": 6,
   "fields": {
     "name": "Enhancement",
-    "created_at": "2023-03-01T12:09:08.822Z"
+    "created_at": "2023-03-03T08:48:36.055Z"
   }
 },
 {
@@ -52,11 +52,16 @@
   "pk": 1,
   "fields": {
     "summary": "homework_57",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fuga quas sint corrupti error! Nostrum!",
-    "type": 1,
-    "status": 1,
-    "created_at": "2023-03-01T12:10:34.510Z",
-    "updated_at": "2023-03-01T12:10:34.510Z"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum",
+    "status": 4,
+    "created_at": "2023-03-03T08:49:00.976Z",
+    "updated_at": "2023-03-03T08:49:00.976Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      4,
+      5
+    ]
   }
 },
 {
@@ -64,11 +69,15 @@
   "pk": 2,
   "fields": {
     "summary": "homework_55",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fuga quas sint corrupti error! Nostrum!\r\nLorem ipsum dolor sit amet consectetur .",
-    "type": 2,
-    "status": 1,
-    "created_at": "2023-03-01T12:11:05.950Z",
-    "updated_at": "2023-03-01T12:11:05.950Z"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "status": 5,
+    "created_at": "2023-03-03T08:49:17.738Z",
+    "updated_at": "2023-03-03T08:49:17.738Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      6
+    ]
   }
 },
 {
@@ -76,11 +85,16 @@
   "pk": 3,
   "fields": {
     "summary": "webinar_27",
-    "description": "Lorem ipsum dolor sit \r\namet consectetur adipisicing elit.",
-    "type": 3,
-    "status": 1,
-    "created_at": "2023-03-01T12:11:29.122Z",
-    "updated_at": "2023-03-01T12:11:29.122Z"
+    "description": "Lorem ipsum dolor sit \r\namet consectetur adipisicing elit",
+    "status": 4,
+    "created_at": "2023-03-03T08:52:33.892Z",
+    "updated_at": "2023-03-03T08:52:33.892Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      5,
+      6
+    ]
   }
 },
 {
@@ -88,11 +102,16 @@
   "pk": 4,
   "fields": {
     "summary": "buy PyCharm",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. \r\nIllum fuga quas sint corrupti error! Nostrum!\r\nLorem ipsum dolor sit amet consectetur adipisicing elit. \r\nIllum fuga quas sint corrupti error! Nostrum!",
-    "type": 1,
-    "status": 2,
-    "created_at": "2023-03-01T12:12:07.526Z",
-    "updated_at": "2023-03-01T12:12:07.526Z"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. \\r\\nIllum fuga quas sint corrupti error! Nostrum!\\r\\nLorem ipsum dolor sit amet consectetur adipisicing elit. \\r\\nIllum fuga quas sint corrupti error! Nostrum!\"",
+    "status": 5,
+    "created_at": "2023-03-03T08:52:52.860Z",
+    "updated_at": "2023-03-03T08:52:52.860Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      5,
+      6
+    ]
   }
 },
 {
@@ -101,10 +120,14 @@
   "fields": {
     "summary": "buy products",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor quia, molestias reprehenderit omnis mollitia eveniet repellendus nam at vitae facilis iste blanditiis quaerat qui eligendi dignissimos! At, consequuntur. Voluptate.",
-    "type": 2,
-    "status": 2,
-    "created_at": "2023-03-01T12:14:04.302Z",
-    "updated_at": "2023-03-01T12:14:04.302Z"
+    "status": 6,
+    "created_at": "2023-03-03T08:53:13.933Z",
+    "updated_at": "2023-03-03T08:53:13.933Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      4
+    ]
   }
 },
 {
@@ -112,31 +135,40 @@
   "pk": 6,
   "fields": {
     "summary": "Django models relations",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "type": 1,
-    "status": 3,
-    "created_at": "2023-03-01T12:14:41.498Z",
-    "updated_at": "2023-03-01T12:14:41.498Z"
+    "description": "Lorem ipsum dolor sit amet",
+    "status": 6,
+    "created_at": "2023-03-03T08:53:35.164Z",
+    "updated_at": "2023-03-03T08:53:35.164Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      4,
+      5
+    ]
   }
 },
 {
   "model": "webapp.issue",
   "pk": 7,
   "fields": {
-    "summary": "Django forms",
-    "description": "Harum dolor quia, molestias reprehenderit omnis mollitia eveniet repellendus nam at vitae facilis iste blanditiis quaerat qui eligendi dignissimos! At, consequuntur. Voluptate.",
-    "type": 3,
-    "status": 3,
-    "created_at": "2023-03-01T12:15:05.328Z",
-    "updated_at": "2023-03-01T12:15:05.328Z"
+    "summary": "Django forms.",
+    "description": "Harum dolor quia, molestias reprehenderit omnis mollitia eveniet repellendus nam at vitae facilis iste blanditiis quaerat qui eligendi dignissimos! At, consequuntur..",
+    "status": 6,
+    "created_at": "2023-03-03T08:54:04.852Z",
+    "updated_at": "2023-03-03T08:54:54.431Z",
+    "is_deleted": false,
+    "deleted_at": null,
+    "type": [
+      5
+    ]
   }
 },
 {
   "model": "auth.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$390000$llCc23SMiMlF1PEiJYO9fg$+xIvPhCbg4L/IXn3jc5PP7lKMOZPB0DCpffLg3EU2co=",
-    "last_login": "2023-03-01T11:29:01.067Z",
+    "password": "pbkdf2_sha256$390000$1yjWuWhw6ZLQTQoR55c9lr$wjCUpHL2YDPH8h7PdB7Y5x9ay107fqe79Xxd7k45Jy8=",
+    "last_login": "2023-03-03T08:41:51.062Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -144,7 +176,7 @@
     "email": "",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2023-03-01T11:28:13.273Z",
+    "date_joined": "2023-03-03T08:41:26.644Z",
     "groups": [],
     "user_permissions": []
   }
