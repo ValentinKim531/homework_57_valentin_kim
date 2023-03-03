@@ -5,21 +5,23 @@ from .models import Issue, Status, Type
 
 # Register your models here.
 
+
 class IssueAdmin(admin.ModelAdmin):
     list_display = (
         "id",
         "summary",
         "description",
-        'status',
-        'get_type'
+        "status",
+        "get_type",
     )
     list_filter = ("id", "summary", "description")
     search_fields = ("summary", "description")
-    fields = ("summary", "description", 'status', 'type')
+    fields = ("summary", "description", "status", "type")
     readonly_fields = ("id", "created_at", "updated_at")
 
     def get_type(self, instance):
         return [type.name for type in instance.type.all()]
+
 
 admin.site.register(Issue, IssueAdmin)
 
